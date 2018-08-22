@@ -1,5 +1,11 @@
 body{
     background: black;
+    color: white;
+    margin: 0;
+}
+a{
+color: inherit;
+text-decoration: none;
 }
 .clearfix::after{
     content: '';
@@ -7,6 +13,16 @@ body{
     clear: both;
 }
 
+.topNavbar{
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.topNavbar>nav{
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
 .topNavbar>nav>ul{
     list-style: none; 
     margin: 0; 
@@ -14,16 +30,16 @@ body{
 }
 
 .topNavbar>nav>ul>li{
-    float:left; ]
-    margin-left: 17px;
+    float:left; 
+    margin-left:17px;
     margin-right:17px;
 }
 
 .topNavbar>nav>ul>li>a{
     font-size: 12;
     color: #b7b7b7;
-text-decoration: none;
 font-weight: bold;
+border-top: -4px solid transparent; 
 border-bottom: 4px solid transparent;
 padding-top: 5px;
 padding-bottom: 5px;
@@ -32,4 +48,18 @@ display: block;
 
 .topNavbar>nav>ul>li>a:hover{
     border-bottom: 4px solid #e06567;
+}
+
+.topNavbar .logo{
+    font-size: 24px;
+    font-family: "Arial Black";
+    padding-top: 3px;
+    padding-bottom: 4px;
+    }
+.topNavbar .logo .rs {  
+    margin-right: 4px;
+    color: #e6686a; 
+}
+.topNavbar .logo .card {
+   color: #9a9da2;
 }
